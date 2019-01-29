@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+    background-color: #1f1f1f;
+}
+.tab {
+  width: 100%;
+  background-image: url(../img/bg1.png);
+  background-size: cover;
+   margin-top: 50px;
+}
+.tab .box {
+  width: 1200px;
+  height: 600px;
+  margin: 0 auto;
+}
+.tab .box .menus {
+  width: 200px;
+  height: 600px;
+  background-color: rgb(161, 156, 156);
+  float: left;
+  color: #fff;
+  border-radius: 7px;
+  /* 解决里面的li宽度造成的圆角不显示 */
+  overflow: hidden;
+}
+.tab .box .menus li {
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  transition: all 0.5s;
+  border-bottom: 1px solid rgb(185, 177, 177);
+}
+/* 注意权重问题 */
+.tab .box .menus .bg {
+  background-color: #409eff;
+  height: 80px;
+  line-height: 80px;
+}
+.tab .box .menus li:last-child {
+  border: none;
+}
+.tab .box .right {
+  width: 980px;
+  height: 600px;
+  float: left;
+  margin-left: 20px;
+  overflow: hidden;
+}
+.tab .box .right .imgbox {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+.tab .box .right .imgbox img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+.tab .scroll {
+  transition: all 0.5s;
+  /* -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s; */
+}
